@@ -1,0 +1,20 @@
+The Components folder contains elements of gameplay that you can use to make a variety of 2D games in Unity, without having to write a single line of code.
+
+Components are divided into the following categories:
+Nouns: Characters, Enemies, Collectables, and more.
+Verbs: Move, Jump, Create, Shoot, and more.
+Logic: Health, Custom Variables, and more
+Events: Input, Collision, Comparisons and more.
+Other: Keys and Locks.
+
+You can drag any component to an object to make it do something.
+
+Examples:
+
+Create a Player Character that can run and jump:
+
+Create a new GameObject, or drag in a Sprite.
+Attach a RigidBody2D, and a BoxCollider2D
+Drag a Player component from the Nouns category.
+Drag a Mover from the Verbs category. Make sure that input is set to "Button" - this will ensure that we can use the A and D keys to move left and right. Also be sure that direction is set to X (so we can move on the horizontal axis). Set Speed to 3.
+Next add a Jump component. Set its type to "Button" and choose a key for it from the dropdown (Spacebar is recommended). Set Speed to 4.
