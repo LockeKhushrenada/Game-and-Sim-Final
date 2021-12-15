@@ -552,8 +552,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Theme: 10 Seconds
 
-    Press "E" to slow down time and get to the other
-    side'
+    Press "E" to slow down time for 10 seconds and
+    get to the other side'
 --- !u!222 &1396514205
 CanvasRenderer:
   m_ObjectHideFlags: 0
