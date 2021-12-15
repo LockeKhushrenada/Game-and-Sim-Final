@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class KillZone : MonoBehaviour
+public class goal : MonoBehaviour
 {
-    [SerializeField]
-    int currentScene = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +19,10 @@ public class KillZone : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        SceneManager.LoadScene(currentScene);
+        if(collision.rigidbody.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
     }
 }
